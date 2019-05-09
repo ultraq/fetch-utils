@@ -1,0 +1,35 @@
+{
+	"name": "@ultraq/fetch-utils",
+	"version": "1.0.0",
+	"description": "A collection of utilities for working with the Fetch API",
+	"author": "Emanuel Rabina <emanuelrabina@gmail.com> (http://www.ultraq.net.nz/)",
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ultraq/fetch-utils.git"
+	},
+	"keywords": [
+		"fetch",
+		"utilities"
+	],
+	"main": "fetch-utils.cjs.js",
+	"module": "fetch-utils.es.js",
+	"scripts": {
+		"lint": "eslint \"*.js\"",
+		"test": "npm run lint",
+		"build": "npm run build:cjs && npm run build:es",
+		"build:cjs": "BABEL_ENV=cjs babel fetch-utils.js --out-file fetch-utils.cjs.js --source-maps",
+		"build:es": "BABEL_ENV=es babel fetch-utils.js --out-file fetch-utils.es.js --source-maps",
+		"prepublish": "npm run build"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.3.4",
+		"@babel/cli": "^7.2.3",
+		"@babel/preset-env": "^7.3.4",
+		"eslint": "^5.15.2",
+		"eslint-config-ultraq": "^2.2.0"
+	},
+	"engines": {
+		"node": ">=8.0.0"
+	}
+}
