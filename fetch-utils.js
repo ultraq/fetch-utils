@@ -15,15 +15,18 @@
  */
 
 /**
- * Make sure the response from the server is an OK one, throwing an error if it
- * isn't.
+ * Checks for an OK response (status code 200 - 299), throwing an error (so that
+ * it ends up in `catch` functions) if the status isn't OK.
  * 
  * @param {Response} response
- * @return {Response}
+ * @return {Response} The response object.
+ * @throws {Error} Error with the response object.
  */
 export function checkStatus(response) {
 	if (!response.ok) {
-		throw new Error(`${response.code} - ${response.statusText}`);
+		let errorWithResponse = new Error(`${response.status} - ${response.statusText}`);
+		errorWithResponse.response = response;
+		throw errorWithResponse;
 	}
 	return response;
 }
