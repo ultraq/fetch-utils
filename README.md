@@ -5,7 +5,6 @@ fetch-utils
 [![Build Status](https://travis-ci.com/ultraq/fetch-utils.svg?branch=master)](https://travis-ci.com/ultraq/fetch-utils)
 [![Coverage Status](https://coveralls.io/repos/github/ultraq/fetch-utils/badge.svg?branch=master)](https://coveralls.io/github/ultraq/fetch-utils?branch=master)
 [![npm](https://img.shields.io/npm/v/@ultraq/fetch-utils.svg?maxAge=3600)](https://www.npmjs.com/package/@ultraq/fetch-utils)
-[![License](https://img.shields.io/github/license/ultraq/fetch-utils.svg?maxAge=2592000)](https://github.com/ultraq/fetch-utils/blob/master/LICENSE.txt)
 
 A collection of utilities for working with the Fetch API.
 
