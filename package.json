@@ -1,6 +1,6 @@
 {
 	"name": "@ultraq/fetch-utils",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "A collection of utilities for working with the Fetch API",
 	"author": "Emanuel Rabina <emanuelrabina@gmail.com> (http://www.ultraq.net.nz/)",
 	"license": "Apache-2.0",
@@ -33,6 +33,6 @@
 		"node-fetch": "^2.6.0"
 	},
 	"engines": {
-		"node": ">=8.0.0"
+		"node": ">=10"
 	}
 }
