@@ -17,7 +17,7 @@
 	"scripts": {
 		"lint": "eslint \"*.js\"",
 		"test": "jest",
-		"coverage": "cat ./coverage/lcov.info | coveralls",
+		"coverage": "cat coverage/lcov.info | coveralls",
 		"build": "npm run build:cjs && npm run build:es",
 		"build:cjs": "BABEL_ENV=cjs babel fetch-utils.js --out-file fetch-utils.cjs.js --source-maps",
 		"build:es": "BABEL_ENV=es babel fetch-utils.js --out-file fetch-utils.es.js --source-maps",
@@ -27,6 +27,7 @@
 		"@babel/core": "^7.10.3",
 		"@babel/cli": "^7.10.3",
 		"@babel/preset-env": "^7.10.3",
+		"coveralls": "^3.1.0",
 		"eslint": "^7.3.0",
 		"eslint-config-ultraq": "^2.3.3",
 		"jest": "^26.0.1",
