@@ -3,4 +3,5 @@
 /node_modules
 npm-debug.log
 fetch-utils.cjs.js*
+fetch-utils.d.ts
 fetch-utils.es.js*
