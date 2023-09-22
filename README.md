@@ -3,7 +3,7 @@ fetch-utils
 ===========
 
 [![Build Status](https://github.com/ultraq/fetch-utils/actions/workflows/build.yml/badge.svg)](https://github.com/ultraq/fetch-utils/actions)
-[![Coverage Status](https://coveralls.io/repos/github/ultraq/fetch-utils/badge.svg?branch=main)](https://coveralls.io/github/ultraq/fetch-utils?branch=main)
+[![codecov](https://codecov.io/gh/ultraq/fetch-utils/graph/badge.svg?token=SGH8FC29HU)](https://codecov.io/gh/ultraq/fetch-utils)
 [![npm](https://img.shields.io/npm/v/@ultraq/fetch-utils.svg?maxAge=3600)](https://www.npmjs.com/package/@ultraq/fetch-utils)
 [![Bundlephobia minified size](https://img.shields.io/bundlephobia/min/@ultraq/fetch-utils)](https://bundlephobia.com/result?p=@ultraq/fetch-utils)
 
