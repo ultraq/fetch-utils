@@ -36,7 +36,7 @@ export function checkStatus(response) {
  * object.
  * 
  * @param {Response} response
- * @return {Promise} A promise of the parsed JSON response, or `null` if the
+ * @return {Promise<any>} A promise of the parsed JSON response, or `null` if the
  *   response could not be parsed.
  */
 export function responseAsJson(response) {
@@ -47,7 +47,7 @@ export function responseAsJson(response) {
  * Process the response body as a string.
  * 
  * @param {Response} response
- * @return {Promise} A promise of the response body.
+ * @return {Promise<string>} A promise of the response body.
  */
 export function responseAsText(response) {
 	return response.text();
