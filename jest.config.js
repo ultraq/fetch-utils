@@ -1,7 +1,4 @@
-/* eslint-env node */
-'use strict'; // eslint-disable-line
-
-module.exports = {
+export default {
 	collectCoverage: true,
 	coverageReporters: [
 		'html',
