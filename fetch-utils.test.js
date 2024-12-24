@@ -1,4 +1,3 @@
-/* eslint-env jest */
 import {checkStatus, responseAsJson, responseAsText} from './fetch-utils.js';
 
 import {Response} from 'node-fetch';
