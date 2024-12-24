@@ -27,8 +27,8 @@
 		"prepublishOnly": "npm run build"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.22.20",
 		"@babel/cli": "^7.22.15",
+		"@babel/core": "^7.22.20",
 		"@babel/preset-env": "^7.22.20",
 		"@types/jest": "^29.5.5",
 		"eslint": "^9.17.0",
