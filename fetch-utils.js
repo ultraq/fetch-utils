@@ -1,12 +1,12 @@
-/* 
+/*
  * Copyright 2019, Emanuel Rabina (http://www.ultraq.net.nz/)
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *     http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -17,7 +17,7 @@
 /**
  * Checks for an OK response (status code 200 - 299), throwing an error (so that
  * it ends up in `catch` functions) if the status isn't OK.
- * 
+ *
  * @param {Response} response
  * @return {Response} The response object.
  * @throws {Error} Error with the response object.
@@ -34,9 +34,10 @@ export function checkStatus(response) {
 /**
  * Assumes a JSON response and attempts to parse and return it as a JavaScript
  * object.
- * 
+ *
+ * @template T
  * @param {Response} response
- * @return {Promise<any>} A promise of the parsed JSON response, or `null` if the
+ * @return {Promise<T | null>} A promise of the parsed JSON response, or `null` if the
  *   response could not be parsed.
  */
 export function responseAsJson(response) {
@@ -45,7 +46,7 @@ export function responseAsJson(response) {
 
 /**
  * Process the response body as a string.
- * 
+ *
  * @param {Response} response
  * @return {Promise<string>} A promise of the response body.
  */
