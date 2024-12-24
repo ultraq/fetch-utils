@@ -1,2 +1,5 @@
 /coverage
 .*
+eslint.config.js
+jest.config.js
+*.test.js
