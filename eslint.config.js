@@ -2,7 +2,7 @@ import myConfig from 'eslint-config-ultraq';
 import globals from 'globals';
 
 /**
- * @typedef {import('eslint').Linter.Config[]}
+ * @type {import('eslint').Linter.Config[]}
  */
 export default [
 	...myConfig,
